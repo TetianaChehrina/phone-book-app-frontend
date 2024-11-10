@@ -1,0 +1,37 @@
+.registration_page_section {
+  padding-top: 80px;
+  background: url("../../../public/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container {
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .registration_page_section {
+    padding-top: 180px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .registration_page_section {
+    padding-top: 200px;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

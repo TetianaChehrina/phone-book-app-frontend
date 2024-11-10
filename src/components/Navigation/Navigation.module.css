@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.list {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.list:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    font-size: 16px;
+  }
+
+  .list {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navigation {
+    gap: 20px;
+  }
+
+  .list {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  color: azure;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .link {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .link {
+    font-size: 26px;
+  }
+}

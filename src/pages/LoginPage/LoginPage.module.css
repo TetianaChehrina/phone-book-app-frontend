@@ -1,0 +1,41 @@
+.login_section {
+  padding-top: 120px;
+  background: linear-gradient(to bottom, #808080, #000000);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.login_page_container {
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .login_section {
+    padding-top: 130px;
+    background: linear-gradient(to bottom, #808080, #000000);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .login_page_container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .login_section {
+    padding-top: 178px;
+  }
+
+  .login_page_container {
+    max-width: 2890px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

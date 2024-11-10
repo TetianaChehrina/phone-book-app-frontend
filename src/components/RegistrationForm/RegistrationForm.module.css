@@ -1,0 +1,97 @@
+.form_container {
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 380px;
+  margin: 100px auto;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+input {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: transparent;
+  color: rgb(8, 8, 8);
+}
+
+input:focus {
+  border-color: #ffffff;
+}
+
+.form input::placeholder {
+  color: rgb(19, 19, 18);
+}
+
+button {
+  padding: 15px;
+  font-size: 20px;
+  width: 130px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+.link {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+.link a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .form_container {
+    padding: 50px;
+    max-width: 450px;
+    margin: 0px 200px 70px auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form_container {
+    padding: 40px;
+    max-width: 450px;
+    margin: 0px 470px 200px auto;
+  }
+}
