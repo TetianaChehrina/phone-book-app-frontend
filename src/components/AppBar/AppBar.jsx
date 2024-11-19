@@ -13,7 +13,7 @@ const AppBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen((prevState) => !prevState);
   };
 
   return (
@@ -39,8 +39,12 @@ const AppBar = () => {
             <IoMdClose size={24} />
           </div>
           <div className={css.nav_content}>
-            <Navigation />
-            {isLoggedIn ? <UserMenu /> : <AuthNav />}
+            <Navigation toggleMenu={toggleMenu} />
+            {isLoggedIn ? (
+              <UserMenu toggleMenu={toggleMenu} />
+            ) : (
+              <AuthNav toggleMenu={toggleMenu} />
+            )}
           </div>
         </nav>
       )}

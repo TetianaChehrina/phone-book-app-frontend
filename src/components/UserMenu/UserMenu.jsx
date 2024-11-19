@@ -6,7 +6,7 @@ import { CiEdit } from "react-icons/ci";
 import { useState } from "react";
 import EditProfileForm from "../EditProfileForm/EditProfileForm";
 
-const UserMenu = () => {
+const UserMenu = ({ toggleMenu }) => {
   const [isEditing, setIsEditing] = useState(false);
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
@@ -17,6 +17,11 @@ const UserMenu = () => {
 
   const handleCloseForm = () => {
     setIsEditing(false);
+  };
+
+  const handleLogout = () => {
+    dispatch(logOut());
+    toggleMenu();
   };
 
   return (
@@ -41,11 +46,7 @@ const UserMenu = () => {
           <EditProfileForm onClose={handleCloseForm} />
         </div>
       )}
-      <button
-        className={css.btn}
-        type="button"
-        onClick={() => dispatch(logOut())}
-      >
+      <button className={css.btn} type="button" onClick={handleLogout}>
         Logout
       </button>
     </div>
